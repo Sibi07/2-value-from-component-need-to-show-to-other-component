@@ -1,0 +1,25 @@
+<!--To pass values from one component to another in the SB Admin 2 template, you can use JavaScript and leverage event handling. Here's an example of how you can achieve this:
+
+Assuming you have two components: Component A and Component B. When a value is entered in Component A, it should be displayed in Component B.
+
+In the HTML file, we can use the following code:-->
+
+<!-- Component A -->
+<div class="form-group">
+    <label for="inputValue">Enter a value:</label>
+    <input type="text" class="form-control" id="inputValue">
+  </div>
+  
+  <!-- Component B -->
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Value from Component A:</h5>
+      <p id="displayValue"></p>
+    </div>
+  </div>
+  
+  <!--Here, we first get references to the input element with the id inputValue and the display element with the id displayValue. Then, we add an event listener to the input element for the input event, which is triggered whenever the value in Component A changes. Inside the event listener, we update the text content of the display element with the value entered in Component A.
+
+Make sure to include the JavaScript file in your HTML file using the script tag: -->
+
+<script src="script.js"></script>
